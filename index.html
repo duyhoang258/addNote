@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test html</title>
+</head>
+<body>
+<script type="text/javascript">
+    var str="",str2="";
+    function addNote() {
+        str=document.getElementById("inputText").value;
+        str2 =str2+ "- "+str + " "+"<br>";
+        console.log(str2);
+        document.getElementById("showNote").innerHTML=str2;
+    }
+</script>
+<div class="center">
+    <h1>Welcome to your note app</h1>
+    <input type="text" id="inputText">
+    <button type="submit" name="submitBtn" onclick="addNote()">Submit</button>
+    <article class="">
+        <h1>This is your note</h1>
+        <p id="showNote"></p>
+
+    </article>
+</div>
+</body>
+</html>
